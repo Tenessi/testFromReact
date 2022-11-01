@@ -1,0 +1,73 @@
+@import "./reset";
+
+@font-face {
+  font-family: 'Avenir';
+  font-style: normal;
+  font-weight: 800;
+  src: local(''),
+       url('../fonts/AvenirNextCyr-Heavy.woff') format('woff'), 
+       url('../fonts/AvenirNextCyr-Heavy.woff2') format('woff2'), 
+}
+
+@font-face {
+  font-family: 'Avenir';
+  font-style: normal;
+  font-weight: 500;
+  src: local(''),
+       url('../fonts/AvenirNextCyr-Medium.woff') format('woff'), 
+       url('../fonts/AvenirNextCyr-Medium.woff2') format('woff2'), 
+}
+
+body {
+  background-color: #000000;
+  font-family: 'Montserrat', sans-serif;
+  font-family: 'Noto Sans', sans-serif;
+  font-family: 'Roboto', sans-serif; 
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0px 100px;
+  overflow: hidden;
+}
+
+@media (max-width: 1050px) {
+  .container  {
+    padding: 0px 50px;
+  }
+}
+@media (max-width: 767px) {
+  .container {
+    padding: 0 15px;
+  }
+}
+
+.title-main {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 51px;
+  line-height: 62px;
+}
+
+.description-main {
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+}
+
+@import "./cookie/cookie";
+@import "./header/header";
+@import "./main/partners";
+@import "./main/mission";
+@import "./main/scanner";
+@import "./main/integration";
+@import "./main/qr-code";
+@import "./main/generate";
+@import "./main/order";
+@import "./main/_images-block";
+@import "./main/form";
+@import "./footer/footer";

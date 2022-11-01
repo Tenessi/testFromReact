@@ -1,0 +1,108 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 24px;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: rgb(201, 199, 197);
+}
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 50;
+  transition: all 0.3s ease 0s;
+}
+
+.prev-arrow {
+  background-color: white;
+  left: 15px;
+  
+}
+
+.prev-arrow img {
+  transform: rotate(180deg);
+}
+
+.next-arrow {
+  background-color: white;
+  right: 15px;
+}
+
+.arrow:hover {
+  background-color: rgb(208, 208, 208);
+}
+
+.hero__slider {
+  max-width: 600px;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin: 100px auto;
+  flex-direction: column;
+}
+
+.slider__container {
+  max-width: 600px;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.slider {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  height: 100%;
+}
+
+.slide {
+  width: 600px;
+  flex-shrink: 0;
+  height: 100%;
+  background-color: rgb(104, 162, 250);
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slider__controler {
+  margin-top: 20px;
+}
+
+.slider__controler .dot {
+  display: inline-block;
+  text-decoration: none;
+  width: 10px;
+  height: 10px;
+  background: rgb(135, 98, 98);
+  border-radius: 50%;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.dot.active {
+  background: rgb(104, 162, 250);
+}
+
+
+

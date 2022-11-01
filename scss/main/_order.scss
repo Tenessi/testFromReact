@@ -1,0 +1,142 @@
+.section__order {
+  height: 1200px;
+  margin-top: 500px;
+}
+
+.order {
+  margin-top: 200px;
+  position: relative;
+  &__content {
+    display: flex;
+    justify-content: end;
+    &_title {
+      margin-bottom: 23px;
+    }
+  }
+  &__images {
+    position: relative;
+    &_place {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      img {
+        display: block;
+        margin: 0 auto;
+        max-width: 100%;
+      }
+    }
+    &_block {
+      position: absolute;
+      display: flex;
+      top: 200px;
+      span {
+        padding: 23px 22px;
+        border: 1px solid #ffffff;
+        border-radius: 18px;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 23px;
+        line-height: 27px;
+        background-color: #000000;
+      }
+    }
+  }
+}
+
+.block-1 {
+  margin-top: 0px;
+  left: 55%;
+}
+.block-2 {
+  margin-top: 160px;
+  right: 64%;
+}
+.block-3 {
+  right: 55%;
+  margin-top: 530px;
+}
+.block-4 {
+  left: 72%;
+  margin-top: 440px;
+}
+
+@media (max-width: 1050px) {
+  .section__order {
+    margin-top: 800px;
+  }
+}
+
+@media (max-width: 850px) {
+  .order {
+    &__content {
+      justify-content: start;
+    }
+    &__images {
+      &_place {
+        margin-top: 100px;
+      }
+      &_block {
+        span {
+          padding: 13px 15px;
+          font-size: 14px;
+          line-height: 16px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .section__order {
+    margin-top: 500px;
+  }
+  .block-1 {
+    margin-top: -200px;
+  }
+  .block-2 {
+    margin-top: -40px;
+  }
+  .block-3 {
+    margin-top: 330px;
+  }
+  .block-4 {
+    margin-top: 240px;
+  }
+}
+
+@media (max-width: 500px) {
+  .order__content {
+    &_title {
+      font-size: 24px;
+      line-height: 29px;
+    }
+    &_description {
+      font-size: 16px;
+      line-height: 22px;
+      margin-bottom: 60px;
+    }
+  }
+  .block-1 {
+    width: 171px;
+    height: 62px;
+    margin-top: -200px;
+    left: 50%;
+  }
+  .block-2 {
+    margin-top: -280px;
+    right: 44%;
+    width: 170px;
+    height: 57px;
+  }
+  .block-3 {
+    margin-top: 150px;
+    right: 65%;
+  }
+  .block-4 {
+    width: 122px;
+    height: 58px;
+    margin-top: 200px;
+    left: 65%;
+  }
+}
